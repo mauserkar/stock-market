@@ -1,9 +1,9 @@
 FROM python:3.7
 
-RUN pip install pandas-datareader DateTime
+RUN pip install requests
 
 WORKDIR /app
 
 COPY . .
 
-# CMD ["python","/src/app.py"]
+CMD ["python","/app/src/app.py"]
